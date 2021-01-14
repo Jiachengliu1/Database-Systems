@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Placemark><name>Leavey</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282727,34.021704</coordinates></Point>
+</Placemark>
+<Placemark><name>Accounting</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.285533,34.019187</coordinates></Point>
+</Placemark>
+<Placemark><name>Architecture</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.288023,34.019177</coordinates></Point>
+</Placemark>
+<Placemark><name>Law</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.284228,34.018619</coordinates></Point>
+</Placemark>
+<Placemark><name>GaughanTiberti</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.282537,34.018638</coordinates></Point>
+</Placemark>
+<Placemark><name>WilsonDental</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286192,34.023950</coordinates></Point>
+</Placemark>
+<Placemark><name>GrandAvenue</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.276407,34.019037</coordinates></Point>
+</Placemark>
+<Placemark><name>CinematicArts</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283545,34.020071</coordinates></Point>
+</Placemark>
+<Placemark><name>DohenyMemorial</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283758,34.020036</coordinates></Point>
+</Placemark>
+<Placemark><name>Hoose</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.286595,34.018721</coordinates></Point>
+</Placemark>
+<Placemark><name>Science</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.288787,34.019594</coordinates></Point>
+</Placemark>
+<Placemark><name>Gerontology</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.283736,34.020197</coordinates></Point>
+</Placemark>
+<Placemark><name>TommyTrojan</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.285443,34.020559</coordinates></Point>
+</Placemark>
+</Document></kml>

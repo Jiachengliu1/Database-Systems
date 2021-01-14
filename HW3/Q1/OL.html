@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>OL</title>
+<script src="https://openlayers.org/api/OpenLayers.js">
+</script>
+<style>
+#map {
+    width:800px;
+    height:800px;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+
+<script>
+
+// here's how to plot points on a map, using OpenLayers:
+// [this is code I mildly modified, from an existing source]
+function initMap() {
+        map = new OpenLayers.Map('map');
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+}// initMap()
+
+function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                map.getProjectionObject() // to Spherical Mercator Projection
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat, 15); // second arg is zoom level
+        //console.log(latitude + ", " + longitude);
+}// addMarker()
+
+
+// load and setup map layers
+initMap();
+
+// here's how to plot just ONE [lat,long] on the map! 
+addMarker(34.021704, -118.282727); // Leavey
+addMarker(34.019187, -118.285533) // Accounting
+addMarker(34.019177, -118.288023) // Architecture
+addMarker(34.018619, -118.284228) // Law
+addMarker(34.018638, -118.282537) // GaughanTiberti
+addMarker(34.023950, -118.286192) // WilsonDental
+addMarker(34.019037, -118.276407) // GrandAvenue
+addMarker(34.020071, -118.283545) // CinematicArts
+addMarker(34.020036, -118.283758) // DohenyMemorial
+addMarker(34.018721, -118.286595) // Hoose
+addMarker(34.019594, -118.288787) // Science
+addMarker(34.020197, -118.283736) // Gerontology
+addMarker(34.020559, -118.285443) // TommyTrojan
+
+
+</script>
+
+</body>
+
+</html>
